@@ -25692,6 +25692,22 @@ ion-navbar.toolbar {
   min-height: 46px;
 }
 
+.borde-redus-100 {
+  border-radius: 100% !important;
+}
+
+.border-redius-15 {
+  border-radius: 15px !important;
+}
+
+.background-color {
+  background-color: lightgray !important;
+}
+
+page-appointment .back-ground-color {
+  background-color: steelblue !important;
+}
+
 page-home .scroll-content {
   margin-top: 0 !important;
 }

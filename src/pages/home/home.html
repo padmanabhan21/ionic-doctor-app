@@ -8,7 +8,7 @@
     </ion-slide>
   </ion-slides>
   <div class="login-container">
-    <img class="logo" src="assets/imgs/logo/logo-canon.png" />
+    <img class="logo" src="assets/imgs/logo/logo_original.png" />
     <form (submit)="doLogin()">
       <strong>Login:</strong>
       <ion-item>
@@ -17,7 +17,7 @@
       <ion-item>
         <ion-input type="password" placeholder="Password"></ion-input>
       </ion-item>
-      <button ion-button margin color="danger">LOGIN</button>
+      <button ion-button margin color="danger" (click)="navappointmentpage()">LOGIN</button>
       <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>
     </form>
   </div>

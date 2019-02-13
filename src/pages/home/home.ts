@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
+import{AppointmentPage} from '../appointment/appointment';
 
 @Component({
   selector: 'page-home',
@@ -37,5 +38,9 @@ export class HomePage {
 
       console.log('user data', userEmail, userPassword);
     }
+  }
+
+  navappointmentpage(){
+    this.navCtrl.push(AppointmentPage);
   }
 }
