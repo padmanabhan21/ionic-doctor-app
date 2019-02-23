@@ -11,8 +11,8 @@
 </ion-header> -->
 
 <ion-content  class="background-color">
-    <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15">
-        <img [src]=""/>
+    <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15" (click)="navpatiententdetails(appointment)">
+        <img src="assets/imgs/logo/venkat.jpeg"/>
         <ion-card-content>
           <ion-row>
             <ion-col col-3>
@@ -22,12 +22,12 @@
           </ion-col>
           <ion-col col-1></ion-col>
           <ion-col col-6>
-            <p>User Name:<b>{{appointment.username}}</b></p>
-            <p>Token No:<b>{{appointment.tokenno}}</b></p>
-            <p>Time:<b>{{appointment.time}}</b></p>
+            <p>User Name:<b>{{appointment.user_name}}</b></p>
+            <p>Token No:<b>{{appointment.token_no}}</b></p>
+            <p>Time:<b>{{appointment.token_time}}</b></p>
           </ion-col>
           <ion-col col-2>
-              <ion-toggle color="primary"></ion-toggle>
+              <ion-toggle color="primary" (ionChange)="updateappointment(appointment)" [checked]="appointment.flag"></ion-toggle>
           </ion-col>
           </ion-row>
         </ion-card-content>

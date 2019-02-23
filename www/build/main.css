@@ -25765,3 +25765,12 @@ page-home .login-container {
 page-home ion-button {
   opacity: 0.8;
 }
+
+page-patientdetails .border-redius {
+  border-radius: 30px;
+}
+
+page-patientdetails .relative {
+  position: relative;
+  top: auto;
+}

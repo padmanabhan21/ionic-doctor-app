@@ -10,6 +10,28 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col col-3>
+            <ion-avatar item-left>
+              <img class="border-redius" src="assets/imgs/logo/venkat.jpeg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-1></ion-col>
+          <ion-col col-7>
+            <b>{{user_name}}</b><br>
+            <b>{{mobile_num}}</b><br>
+            <b>{{gmail_id}}</b>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
 
+    <ion-tabs class="relative" color="main" tabsPlacement="top">
+      <ion-tab tabTitle="personal" [root]="tab1root" [rootParams]="patientdetailss" ></ion-tab>
+      <ion-tab tabTitle="medical" [root]="tab2root"></ion-tab>
+      <ion-tab tabTitle="lifestyle" [root]="tab3root"></ion-tab>
+    </ion-tabs>
 </ion-content>
