@@ -244,8 +244,8 @@ var PatientdetailsPage = /** @class */ (function () {
         this.tab2root = __WEBPACK_IMPORTED_MODULE_4__medical_medical__["a" /* MedicalPage */];
         this.tab3root = __WEBPACK_IMPORTED_MODULE_3__lifestyle_lifestyle__["a" /* LifestylePage */];
         this.navParams = navParams;
-        console.log("returning Navparams", this.navParams.data.patientdetails); // returns NavParams {data: Object}
-        this.patientdetailss = this.navParams.data.patientdetails;
+        // console.log("returning Navparams",this.navParams.data.patientdetails); // returns NavParams {data: Object}
+        this.patientdetailss = this.navParams;
         console.log("patientdetails########", this.patientdetailss);
     }
     PatientdetailsPage.prototype.ionViewDidLoad = function () {

@@ -27,8 +27,8 @@ export class PatientdetailsPage {
    public patientdetailss:any={};
   constructor(public navCtrl: NavController, public navParams: NavParams,public api:ProviderserviceProvider) {
     this.navParams = navParams;
-    console.log("returning Navparams",this.navParams.data.patientdetails); // returns NavParams {data: Object}
-    this.patientdetailss = this.navParams.data.patientdetails;
+    // console.log("returning Navparams",this.navParams.data.patientdetails); // returns NavParams {data: Object}
+    this.patientdetailss = this.navParams;
     console.log("patientdetails########",this.patientdetailss)
 
   }
