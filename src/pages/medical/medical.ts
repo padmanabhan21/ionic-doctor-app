@@ -15,18 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MedicalPage {
 
-  public medical:any=[];
+ public medicaldetails:any={};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MedicalPage');
+    this.medicaldetails = this.navParams.data.patientdetails;
+    console.log("medical profileeee******",this.medicaldetails);
 
-    this.medical=[
-      {info:"medical",Allergies:"No",Current_Medications:"No",Past_Medications:"No",
-      Chronic_Diseases:"No",injuries:"No",Surgiries:"No"}
-    
-    ]
   }
 
 }

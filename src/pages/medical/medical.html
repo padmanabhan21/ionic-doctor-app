@@ -12,7 +12,7 @@
 
 <ion-content padding>
 
-    <ion-list *ngFor="let medi of medical">
+    <ion-list>
         <!-- Allergies -->
       <ion-item>
         <ion-row>
@@ -22,7 +22,7 @@
             </ion-row>
           </ion-col>
           <ion-col col-4>
-            <p placeholder="add allergies">{{medi.Allergies}}</p>
+            <p placeholder="add allergies">{{medicaldetails.allergies}}</p>
           </ion-col>
         </ion-row>
       </ion-item>
@@ -35,7 +35,7 @@
             </ion-row>
           </ion-col>
           <ion-col col-4>
-            <p placeholder="add Medications">{{medi.Current_Medications}}</p>
+            <p placeholder="add Medications">{{medicaldetails.current_medications}}</p>
           </ion-col>
         </ion-row>
       </ion-item>
@@ -48,7 +48,7 @@
             </ion-row>
           </ion-col>
           <ion-col col-4>
-            <p placeholder="Past Medications">{{medi.Past_Medications}}</p>
+            <p placeholder="Past Medications">{{medicaldetails.past_medications}}</p>
           </ion-col>
         </ion-row>
       </ion-item>
@@ -61,7 +61,7 @@
             </ion-row>
           </ion-col>
           <ion-col col-4>
-            <p placeholder="add disease">{{medi.Chronic_Diseases}}</p>
+            <p placeholder="add disease">{{medicaldetails.chronic_diseases}}</p>
           </ion-col>
         </ion-row>
       </ion-item>
@@ -74,7 +74,7 @@
             </ion-row>
           </ion-col>
           <ion-col col-4>
-            <p placeholder="add incident">{{medi.injuries}}</p>
+            <p placeholder="add incident">{{medicaldetails.injuries}}</p>
           </ion-col>
         </ion-row>
       </ion-item>
@@ -87,7 +87,7 @@
               </ion-row>
             </ion-col>
             <ion-col col-4>
-              <p placeholder="add addsurgeries">{{medi.Surgiries}}</p>
+              <p placeholder="add addsurgeries">{{medicaldetails.surgeries}}</p>
             </ion-col>
           </ion-row>
         </ion-item>

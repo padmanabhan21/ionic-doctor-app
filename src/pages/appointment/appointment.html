@@ -12,19 +12,20 @@
 
 <ion-content  class="background-color">
     <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15" (click)="navpatiententdetails(appointment)">
-        <img src="assets/imgs/logo/venkat.jpeg"/>
+        <!-- <img src="assets/imgs/logo/venkat.jpeg"/> -->
         <ion-card-content>
           <ion-row>
             <ion-col col-3>
             <ion-avatar item-left>
-              <img  class="borde-redus-100" [src]="appointment.custoimg">
+              <img  class="borde-redus-100" src="../../assets/imgs/background/background-2.jpg" style="height: 70px;
+              ">
             </ion-avatar>
           </ion-col>
           <ion-col col-1></ion-col>
           <ion-col col-6>
             <p>User Name:<b>{{appointment.user_name}}</b></p>
             <p>Token No:<b>{{appointment.token_no}}</b></p>
-            <p>Time:<b>{{appointment.token_time}}</b></p>
+            <p>Time:<b>{{appointment.token_time |date:"HH:mm a"}}</b></p>
           </ion-col>
           <ion-col col-2>
               <ion-toggle color="primary" (ionChange)="updateappointment(appointment)" [checked]="appointment.flag"></ion-toggle>

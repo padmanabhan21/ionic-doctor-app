@@ -14,12 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lifestyle.html',
 })
 export class LifestylePage {
-
+ 
+  public lyfstyledetails:any={};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LifestylePage');
+    this.lyfstyledetails = this.navParams.data.patientdetails;
+    console.log("personal profileeee******",this.lyfstyledetails);
   }
 
 }

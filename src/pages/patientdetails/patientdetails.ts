@@ -27,7 +27,6 @@ export class PatientdetailsPage {
    public patientdetailss:any={};
   constructor(public navCtrl: NavController, public navParams: NavParams,public api:ProviderserviceProvider) {
     this.navParams = navParams;
-    // console.log("returning Navparams",this.navParams.data.patientdetails); // returns NavParams {data: Object}
     this.patientdetailss = this.navParams;
     console.log("patientdetails########",this.patientdetailss)
 
@@ -35,11 +34,10 @@ export class PatientdetailsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PatientdetailsPage');
-     this.patientdetailsarr = this.navParams.get("patientdetails");
-     console.log("patient details$$$$$$",JSON.stringify(this.patientdetailsarr));
-     this.username = this.patientdetailsarr.user_name;
-     this.mobile_num = this.patientdetailsarr.mobile;
-     this.gmail_id = this.patientdetailsarr.email;
+     this.patientdetailsarr = this.navParams.data.patientdetails;
+    //  this.username = this.patientdetailsarr.user_name;
+    //  this.mobile_num = this.patientdetailsarr.mobile;
+    //  this.gmail_id = this.patientdetailsarr.email;
 
      
     //  this.patientdetailss = this.patientdetailsarr;
