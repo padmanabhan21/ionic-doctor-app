@@ -29,18 +29,11 @@ export class PatientdetailsPage {
     this.navParams = navParams;
     this.patientdetailss = this.navParams;
     console.log("patientdetails########",this.patientdetailss)
-
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PatientdetailsPage');
      this.patientdetailsarr = this.navParams.data.patientdetails;
-    //  this.username = this.patientdetailsarr.user_name;
-    //  this.mobile_num = this.patientdetailsarr.mobile;
-    //  this.gmail_id = this.patientdetailsarr.email;
-
-     
-    //  this.patientdetailss = this.patientdetailsarr;
   }
 
   tab1root=PersonalPage;
