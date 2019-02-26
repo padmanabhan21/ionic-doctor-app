@@ -1,13 +1,13 @@
-webpackJsonp([5],{
+webpackJsonp([7],{
 
 /***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProviderserviceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84,59 +84,13 @@ var ProviderserviceProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LifestylePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the LifestylePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var LifestylePage = /** @class */ (function () {
-    function LifestylePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.lyfstyledetails = {};
-    }
-    LifestylePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad LifestylePage');
-        this.lyfstyledetails = this.navParams.data.patientdetails;
-        console.log("personal profileeee******", this.lyfstyledetails);
-    };
-    LifestylePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lifestyle',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/'<ion-content >\n\n    <ion-list>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                Smoking Habits\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.smoking_habits}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                  Alcolhol consumption\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.alcohol_consumption}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Activity level\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.activity_level}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Food preference \n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.food_preference}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Profession\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.occupation}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], LifestylePage);
-    return LifestylePage;
-}());
-
-//# sourceMappingURL=lifestyle.js.map
-
-/***/ }),
-
-/***/ 151:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppointmentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patientdetails_patientdetails__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patientdetails_patientdetails__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Providers_providerservice_providerservice__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__upcomingbookings_upcomingbookings__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pastbookings_pastbookings__ = __webpack_require__(156);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,12 +105,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-/**
- * Generated class for the AppointmentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
+
 var AppointmentPage = /** @class */ (function () {
     function AppointmentPage(navCtrl, navParams, alertCtrl, api) {
         this.navCtrl = navCtrl;
@@ -166,31 +116,43 @@ var AppointmentPage = /** @class */ (function () {
         this.appointmentdetails = [];
         this.upcomingbooking = [];
         this.pastbooking = [];
+        this.tab1root = __WEBPACK_IMPORTED_MODULE_4__upcomingbookings_upcomingbookings__["a" /* UpcomingbookingsPage */];
+        this.tab2root = __WEBPACK_IMPORTED_MODULE_5__pastbookings_pastbookings__["a" /* PastbookingsPage */];
         this.appointment = {
             "checked": false,
         };
     }
     AppointmentPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
         console.log('ionViewDidLoad AppointmentPage');
+        this.todaysappointment();
+        // this.subscription = Observable.interval(5000).subscribe(x => {
+        //   this.todaysappointment();
+        // });
+    };
+    AppointmentPage.prototype.ngOnDestroy = function () {
+        this.subscription.unsubscribe();
+    };
+    AppointmentPage.prototype.todaysappointment = function () {
+        var _this = this;
         this.api.patientdetails()
             .subscribe(function (resp) {
             if (resp.Message_Code == "ASS") {
                 _this.appointmentdetails = resp.output;
+                _this.upcomingbooking.length = 0;
+                _this.pastbooking.length = 0;
                 for (var i = 0; i < _this.appointmentdetails.length; i++) {
                     if (_this.appointmentdetails[i].token_status == "Booked") {
-                        _this.upcomingbooking = _this.appointmentdetails[i];
+                        _this.upcomingbooking.push(_this.appointmentdetails[i]);
                     }
                     else {
-                        _this.pastbooking = _this.appointmentdetails[i];
+                        _this.pastbooking.push(_this.appointmentdetails[i]);
                     }
                 }
-                console.log("booked tokensssss", JSON.stringify(_this.upcomingbooking));
-                console.log("consulted tokensssss", JSON.stringify(_this.pastbooking));
+                console.log("booked tokensssss", _this.upcomingbooking);
+                console.log("consulted tokensssss", _this.pastbooking);
                 console.log("patient detailsss", _this.appointmentdetails);
             }
         });
-        // console.log("appointmentdetails", this.patientdetails);
     };
     AppointmentPage.prototype.navpatiententdetails = function (param) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__patientdetails_patientdetails__["a" /* PatientdetailsPage */], { "patientdetails": param });
@@ -240,7 +202,7 @@ var AppointmentPage = /** @class */ (function () {
     };
     AppointmentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-appointment',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\appointment\appointment.html"*/'<!--\n\n  Generated template for the AppointmentPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!-- <ion-header>\n\n  <ion-navbar>\n\n    <ion-title>appointment</ion-title>\n\n  </ion-navbar>\n\n</ion-header> -->\n\n\n\n<ion-content  class="background-color">\n\n    <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15" (click)="navpatiententdetails(appointment)">\n\n        <!-- <img src="assets/imgs/logo/venkat.jpeg"/> -->\n\n        <ion-card-content>\n\n          <ion-row>\n\n            <ion-col col-3>\n\n            <ion-avatar item-left>\n\n              <img  class="borde-redus-100" src="../../assets/imgs/background/background-2.jpg" style="height: 70px;\n\n              ">\n\n            </ion-avatar>\n\n          </ion-col>\n\n          <ion-col col-1></ion-col>\n\n          <ion-col col-6>\n\n            <p>User Name:<b>{{appointment.user_name}}</b></p>\n\n            <p>Token No:<b>{{appointment.token_no}}</b></p>\n\n            <p>Time:<b>{{appointment.token_time |date:"HH:mm a"}}</b></p>\n\n          </ion-col>\n\n          <ion-col col-2>\n\n              <ion-toggle color="primary" (ionChange)="updateappointment(appointment)" [checked]="appointment.flag"></ion-toggle>\n\n          </ion-col>\n\n          </ion-row>\n\n        </ion-card-content>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\appointment\appointment.html"*/,
+            selector: 'page-appointment',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\appointment\appointment.html"*/'<ion-content  class="background-color">\n\n    <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15" (click)="navpatiententdetails(appointment)">\n\n        <!-- <img src="assets/imgs/logo/venkat.jpeg"/> -->\n\n        <ion-card-content>\n\n          <ion-row>\n\n            <ion-col col-3>\n\n            <ion-avatar item-left>\n\n              <img  class="borde-redus-100" src="../../assets/imgs/background/background-2.jpg" style="height: 70px;\n\n              ">\n\n            </ion-avatar>\n\n          </ion-col>\n\n          <ion-col col-1></ion-col>\n\n          <ion-col col-6>\n\n            <p>User Name:<b>{{appointment.user_name}}</b></p>\n\n            <p>Token No:<b>{{appointment.token_no}}</b></p>\n\n            <p>Time:<b>{{appointment.token_time |date:"HH:mm a"}}</b></p>\n\n          </ion-col>\n\n          <ion-col col-2>\n\n              <ion-toggle color="primary" (ionChange)="updateappointment(appointment)" [checked]="appointment.flag"></ion-toggle>\n\n          </ion-col>\n\n          </ion-row>\n\n        </ion-card-content>\n\n      </ion-card>\n\n\n\n      <ion-tabs class="relative" color="primary" tabsPlacement="top">\n\n        <ion-tab tabTitle="Upcoming Bookings" [root]="tab1root" [rootParams]="upcomingbooking" ></ion-tab>\n\n        <ion-tab tabTitle="Past Bookings" [root]="tab2root" [rootParams]="pastbooking" ></ion-tab>\n\n      </ion-tabs>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\appointment\appointment.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */]) === "function" && _d || Object])
     ], AppointmentPage);
@@ -252,15 +214,15 @@ var AppointmentPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 152:
+/***/ 151:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PatientdetailsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_personal__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lifestyle_lifestyle__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_personal__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lifestyle_lifestyle__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__medical_medical__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Providers_providerservice_providerservice__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -295,44 +257,33 @@ var PatientdetailsPage = /** @class */ (function () {
         this.tab2root = __WEBPACK_IMPORTED_MODULE_4__medical_medical__["a" /* MedicalPage */];
         this.tab3root = __WEBPACK_IMPORTED_MODULE_3__lifestyle_lifestyle__["a" /* LifestylePage */];
         this.navParams = navParams;
-        // console.log("returning Navparams",this.navParams.data.patientdetails); // returns NavParams {data: Object}
         this.patientdetailss = this.navParams;
         console.log("patientdetails########", this.patientdetailss);
     }
     PatientdetailsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad PatientdetailsPage');
-<<<<<<< HEAD
         this.patientdetailsarr = this.navParams.data.patientdetails;
-=======
-        this.patientdetailsarr = this.navParams.get("patientdetails");
-        console.log("patient details$$$$$$", JSON.stringify(this.patientdetailsarr));
-        this.username = this.patientdetailsarr.user_name;
-        this.mobile_num = this.patientdetailsarr.mobile;
-        this.gmail_id = this.patientdetailsarr.email;
-        //  this.patientdetailss = this.patientdetailsarr;
->>>>>>> 1b5ae8a0ac1305f2634d6f0afdc99dd77a316601
     };
     PatientdetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-patientdetails',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\patientdetails\patientdetails.html"*/'<!--\n  Generated template for the PatientdetailsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>patientdetails</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-card>\n      <ion-card-content>\n        <ion-row>\n          <ion-col col-3>\n            <ion-avatar item-left>\n              <img class="border-redius" src="assets/imgs/logo/venkat.jpeg">\n            </ion-avatar>\n          </ion-col>\n          <ion-col col-1></ion-col>\n          <ion-col col-7>\n            <b>{{user_name}}</b><br>\n            <b>{{mobile_num}}</b><br>\n            <b>{{gmail_id}}</b>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n\n    <ion-tabs class="relative" color="main" tabsPlacement="top">\n      <ion-tab tabTitle="personal" [root]="tab1root" [rootParams]="patientdetailss" ></ion-tab>\n      <ion-tab tabTitle="medical" [root]="tab2root"></ion-tab>\n      <ion-tab tabTitle="lifestyle" [root]="tab3root"></ion-tab>\n    </ion-tabs>\n</ion-content>'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\patientdetails\patientdetails.html"*/,
+            selector: 'page-patientdetails',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\patientdetails\patientdetails.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>Patient Details</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n  <ion-card>\n\n    <img src="../../assets/imgs/background/background-4.jpg"/>\n\n    <div class="card-title">\n\n      {{patientdetailsarr.user_name}}\n\n    </div>\n\n    <div class="card-subtitle">\n\n      {{patientdetailsarr.mobile}}\n\n    </div>\n\n  </ion-card>\n\n    <ion-tabs class="relative" color="primary" tabsPlacement="top">\n\n      <ion-tab tabTitle="Personal" [root]="tab1root" [rootParams]="patientdetailss" ></ion-tab>\n\n      <ion-tab tabTitle="Medical" [root]="tab2root" [rootParams]="patientdetailss"></ion-tab>\n\n      <ion-tab tabTitle="Lifestyle" [root]="tab3root" [rootParams]="patientdetailss"></ion-tab>\n\n    </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\patientdetails\patientdetails.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */]])
     ], PatientdetailsPage);
     return PatientdetailsPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=patientdetails.js.map
 
 /***/ }),
 
-/***/ 153:
+/***/ 152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -356,44 +307,32 @@ var PersonalPage = /** @class */ (function () {
         this.navParams = navParams;
         this.personalprofile = [];
         this.patientdetails = {};
-        this.patientdetails = this.navParams.data.patientdetails;
-        console.log("personal profileeee******", this.patientdetails);
     }
     PersonalPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad PersonalPage');
-        this.personalprofile = [
-            { info: "personal", name: "john", img: "assets/imgs/logo/venkat.jpeg", contact_number: "9700820429",
-                Email_id: "john@gmail.com", Gender: "Male", Date_of_birth: "1994-01-23", Blood_group: "B+", Martialstatus: "married",
-                Height: "5.8", Weight: "70", Emergency_contact: "9700082942", Location: "chenni",
-            }
-        ];
-        // this.personalprofile = this.navParams.get("patientdetailss");
-        this.patientdetails = this.navParams.get('patientdetailss');
-        // console.log("personal profile@@@@@@@@@",this.patientdetails);
+        this.patientdetails = this.navParams.data.patientdetails;
+        console.log("personal profileeee******", this.patientdetails);
     };
     PersonalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-personal',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\personal\personal.html"*/'<!--\n  Generated template for the PersonalPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header>\n  <ion-navbar>\n    <ion-title>personal</ion-title>\n  </ion-navbar>\n</ion-header> -->\n\n<ion-content padding>\n<ion-list *ngFor="let personal of personalprofile">\n    <!-- //name -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-9>\n          <ion-row>\n            Name\n          </ion-row>\n          <ion-row>\n            {{personal.name}}\n          </ion-row>\n        </ion-col>\n        <ion-col col-3>\n          <ion-avatar item-right>\n            <img [src]="personal.img">\n          </ion-avatar>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- mobile Numbe  -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <!-- <ion-row> -->\n         Mobile Number\n          <!-- </ion-row> -->\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder=" enter your number">{{personal.contact_number}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Email-id -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Email_id\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="Emter your gmail id">{{personal.Email_id}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Gender -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Gender\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="add gender">{{personal.Gender}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- dateofbirth -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n           Date of birth\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="Emter your date_of_birth">{{personal.Date_of_birth}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- bloodgroup -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Blood Group\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="Emter your date_of_birth">{{personal.Blood_group}}+</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- marital status -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Martial Status\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="add marital status">{{personal.Martialstatus}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Height -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Height\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="add Height">{{personal.Height}} inches</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Weight -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Weight\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="add Weight">{{personal.Weight}} (kg)</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Emergency Contact -->\n    <ion-item>\n      <ion-row>\n        <ion-col col-8>\n          <ion-row>\n            Emergency Contact\n          </ion-row>\n        </ion-col>\n        <ion-col col-4>\n          <p placeholder="add emergency details">{{personal.Emergency_contact}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-item>\n    <!-- Location -->\n    <ion-item>\n        <ion-row>\n          <ion-col col-8>\n            <ion-row>\n           Location\n            </ion-row>\n          </ion-col>\n          <ion-col col-4>\n            <p placeholder="add Location">{{personal.Location}}</p>\n          </ion-col>\n        </ion-row>\n      </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\personal\personal.html"*/,
+            selector: 'page-personal',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\personal\personal.html"*/'<ion-content>\n\n<ion-list>\n\n    <!-- //name -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n            Name\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          {{patientdetails.user_name}}\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- mobile Numbe  -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n         Mobile Number\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder=" enter your number">{{patientdetails.mobile}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Email-id -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Email_id\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="Emter your gmail id">{{patientdetails.email}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Gender -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Gender\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="add gender">{{patientdetails.gender}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- dateofbirth -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n           Date of birth\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="Emter your date_of_birth">{{patientdetails.birthday}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- bloodgroup -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Blood Group\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="Emter your date_of_birth">{{patientdetails.blood_group}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- marital status -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Martial Status\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="add marital status">{{patientdetails.married_status}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Height -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Height\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="add Height">{{patientdetails.height}} cm</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Weight -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Weight\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="add Weight">{{patientdetails.weight}} (kg)</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Emergency Contact -->\n\n    <ion-item>\n\n      <ion-row>\n\n        <ion-col col-8>\n\n          <ion-row>\n\n            Emergency Contact\n\n          </ion-row>\n\n        </ion-col>\n\n        <ion-col col-4>\n\n          <p placeholder="add emergency details">{{patientdetails.emergency_contact_mobile}}</p>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    <!-- Location -->\n\n    <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n           Location\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add Location">{{patientdetails.area}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\personal\personal.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PersonalPage);
     return PersonalPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=personal.js.map
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
 /***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LifestylePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -415,13 +354,16 @@ var LifestylePage = /** @class */ (function () {
     function LifestylePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.lyfstyledetails = {};
     }
     LifestylePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LifestylePage');
+        this.lyfstyledetails = this.navParams.data.patientdetails;
+        console.log("personal profileeee******", this.lyfstyledetails);
     };
     LifestylePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lifestyle',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/'<ion-content >\n\n    <ion-list>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                Smoking Habits\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.smoking_habits}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                  Alcolhol consumption\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.alcohol_consumption}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Activity level\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.activity_level}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Food preference \n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.food_preference}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Profession\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.occupation}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/,
+            selector: 'page-lifestyle',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/'<ion-content >\n\n    <ion-list>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                Smoking Habits\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.smoking_habits}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n                  Alcolhol consumption\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.alcohol_consumption}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Activity level\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.activity_level}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Food preference \n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.food_preference}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n               Profession\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add details">{{lyfstyledetails.occupation}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\lifestyle\lifestyle.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LifestylePage);
@@ -432,14 +374,13 @@ var LifestylePage = /** @class */ (function () {
 
 /***/ }),
 
->>>>>>> 1b5ae8a0ac1305f2634d6f0afdc99dd77a316601
 /***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MedicalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -461,18 +402,16 @@ var MedicalPage = /** @class */ (function () {
     function MedicalPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.medical = [];
+        this.medicaldetails = {};
     }
     MedicalPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad MedicalPage');
-        this.medical = [
-            { info: "medical", Allergies: "No", Current_Medications: "No", Past_Medications: "No",
-                Chronic_Diseases: "No", injuries: "No", Surgiries: "No" }
-        ];
+        this.medicaldetails = this.navParams.data.patientdetails;
+        console.log("medical profileeee******", this.medicaldetails);
     };
     MedicalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-medical',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\medical\medical.html"*/'<!--\n\n  Generated template for the MedicalPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!-- <ion-header>\n\n  <ion-navbar>\n\n    <ion-title>medical</ion-title>\n\n  </ion-navbar>\n\n</ion-header> -->\n\n\n\n<ion-content padding>\n\n\n\n    <ion-list>\n\n        <!-- Allergies -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Allergies\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add allergies">{{medicaldetails.allergies}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Current Medications -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Current Medications\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add Medications">{{medicaldetails.current_medications}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Past Medications -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Past Medications\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="Past Medications">{{medicaldetails.past_medications}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Chronic Diseases -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Chronic Diseases\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add disease">{{medicaldetails.chronic_diseases}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Injuries -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Injuries\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add incident">{{medicaldetails.injuries}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Surgeries -->\n\n      <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n             Surgeries\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add addsurgeries">{{medicaldetails.surgeries}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\medical\medical.html"*/,
+            selector: 'page-medical',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\medical\medical.html"*/'<!--\n\n  Generated template for the MedicalPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!-- <ion-header>\n\n  <ion-navbar>\n\n    <ion-title>medical</ion-title>\n\n  </ion-navbar>\n\n</ion-header> -->\n\n\n\n<ion-content padding>\n\n\n\n    <ion-list>\n\n        <!-- Allergies -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Allergies\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add allergies">{{medicaldetails.allergies}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Current Medications -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Current Medications\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add Medications">{{medicaldetails.current_medications}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Past Medications -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Past Medications\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="Past Medications">{{medicaldetails.past_medications}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Chronic Diseases -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Chronic Diseases\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add disease">{{medicaldetails.chronic_diseases}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Injuries -->\n\n      <ion-item>\n\n        <ion-row>\n\n          <ion-col col-8>\n\n            <ion-row>\n\n              Injuries\n\n            </ion-row>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <p placeholder="add incident">{{medicaldetails.injuries}}</p>\n\n          </ion-col>\n\n        </ion-row>\n\n      </ion-item>\n\n      <!-- Surgeries -->\n\n      <ion-item>\n\n          <ion-row>\n\n            <ion-col col-8>\n\n              <ion-row>\n\n             Surgeries\n\n              </ion-row>\n\n            </ion-col>\n\n            <ion-col col-4>\n\n              <p placeholder="add addsurgeries">{{medicaldetails.surgeries}}</p>\n\n            </ion-col>\n\n          </ion-row>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\medical\medical.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], MedicalPage);
@@ -483,7 +422,158 @@ var MedicalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 165:
+/***/ 155:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpcomingbookingsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patientdetails_patientdetails__ = __webpack_require__(151);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the UpcomingbookingsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var UpcomingbookingsPage = /** @class */ (function () {
+    function UpcomingbookingsPage(navCtrl, navParams, alertCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.upcomingbooking = [];
+        this.appointment = {
+            "checked": false,
+        };
+        this.navParams = navParams;
+        this.upcomingbooking = this.navParams.data;
+    }
+    UpcomingbookingsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad UpcomingbookingsPage');
+    };
+    UpcomingbookingsPage.prototype.navpatiententdetails = function (param) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__patientdetails_patientdetails__["a" /* PatientdetailsPage */], { "patientdetails": param });
+        console.log("parammmmm", param);
+    };
+    UpcomingbookingsPage.prototype.updateappointment = function (appointment) {
+        var alert = this.alertCtrl.create({
+            subTitle: "Choose Reason For Appointment",
+        });
+        // alert.setTitle('Choose Reason For Appointment');
+        alert.addInput({
+            type: 'radio',
+            label: 'Headache',
+            value: 'Headache',
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'General',
+            value: 'General',
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Nausea',
+            value: 'Nausea',
+        });
+        alert.addInput({
+            type: 'radio',
+            label: 'Viral',
+            value: 'Viral',
+        });
+        alert.addButton({
+            text: 'Cancel',
+            handler: function (data) {
+                console.log("apppointment Cancelled", data);
+                appointment.flag = true;
+            }
+        });
+        alert.addButton({
+            text: 'CheckOut',
+            handler: function (data) {
+                console.log("Appointment checkedout", data);
+                appointment.flag = true;
+            }
+        });
+        alert.present();
+        this.appointment.checked = false;
+    };
+    UpcomingbookingsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-upcomingbookings',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\upcomingbookings\upcomingbookings.html"*/'<ion-content>\n\n    <ion-card *ngFor="let appointment of upcomingdetail" class="border-redius-15" (click)="navpatiententdetails(appointment)">\n\n        <ion-card-content>\n\n          <ion-row>\n\n            <ion-col col-3>\n\n            <ion-avatar item-left>\n\n              <img  class="borde-redus-100" src="../../assets/imgs/background/background-2.jpg" style="height: 70px;\n\n              ">\n\n            </ion-avatar>\n\n          </ion-col>\n\n          <ion-col col-1></ion-col>\n\n          <ion-col col-6>\n\n            <p>User Name:<b>{{appointment.user_name}}</b></p>\n\n            <p>Token No:<b>{{appointment.token_no}}</b></p>\n\n            <p>Time:<b>{{appointment.token_time |date:"HH:mm a"}}</b></p>\n\n          </ion-col>\n\n          <ion-col col-2>\n\n              <ion-toggle color="primary" (ionChange)="updateappointment(appointment)" [checked]="appointment.flag"></ion-toggle>\n\n          </ion-col>\n\n          </ion-row>\n\n        </ion-card-content>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\upcomingbookings\upcomingbookings.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
+    ], UpcomingbookingsPage);
+    return UpcomingbookingsPage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=upcomingbookings.js.map
+
+/***/ }),
+
+/***/ 156:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PastbookingsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the PastbookingsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PastbookingsPage = /** @class */ (function () {
+    function PastbookingsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.pastbooking = [];
+        this.navParams = navParams;
+        this.pastbooking = this.navParams.data;
+        console.log("DATA SUCCESS", this.pastbooking);
+    }
+    PastbookingsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PastbookingsPage');
+    };
+    PastbookingsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-pastbookings',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\pastbookings\pastbookings.html"*/'<ion-content>\n\n    <ion-card *ngFor="let appointment of pastbooking" class="border-redius-15" (click)="navpatiententdetails(appointment)">\n\n        <ion-card-content>\n\n          <ion-row>\n\n            <ion-col col-3>\n\n            <ion-avatar item-left>\n\n              <img  class="borde-redus-100" src="../../assets/imgs/background/background-2.jpg" style="height: 70px;">\n\n            </ion-avatar>\n\n          </ion-col>\n\n          <ion-col col-1></ion-col>\n\n          <ion-col col-6>\n\n            <p>User Name:<b>{{appointment.user_name}}</b></p>\n\n            <p>Token No:<b>{{appointment.token_no}}</b></p>\n\n            <p>Time:<b>{{appointment.token_time |date:"HH:mm a"}}</b></p>\n\n          </ion-col>\n\n          </ion-row>\n\n        </ion-card-content>\n\n      </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\pastbookings\pastbookings.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], PastbookingsPage);
+    return PastbookingsPage;
+}());
+
+//# sourceMappingURL=pastbookings.js.map
+
+/***/ }),
+
+/***/ 167:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -496,32 +586,40 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 165;
+webpackEmptyAsyncContext.id = 167;
 
 /***/ }),
 
-/***/ 212:
+/***/ 214:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/appointment/appointment.module": [
-		680,
-		4
+		681,
+		6
 	],
 	"../pages/lifestyle/lifestyle.module": [
-		679,
-		3
+		682,
+		5
 	],
 	"../pages/medical/medical.module": [
-		681,
-		2
+		683,
+		4
+	],
+	"../pages/pastbookings/pastbookings.module": [
+		684,
+		3
 	],
 	"../pages/patientdetails/patientdetails.module": [
-		682,
-		1
+		685,
+		2
 	],
 	"../pages/personal/personal.module": [
-		683,
+		686,
+		1
+	],
+	"../pages/upcomingbookings/upcomingbookings.module": [
+		687,
 		0
 	]
 };
@@ -536,20 +634,20 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 212;
+webpackAsyncContext.id = 214;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 348:
+/***/ 350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appointment_appointment__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appointment_appointment__ = __webpack_require__(150);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -597,7 +695,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"E:\ionic-doctor-app\src\pages\home\home.html"*/'<ion-header no-border>\n\n  <ion-navbar transparent>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n  <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">\n\n    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{\'background-image\': \'url(\' + background +\')\'}">\n\n    </ion-slide>\n\n  </ion-slides>\n\n  <div class="login-container">\n\n    <img class="logo" src="assets/imgs/logo/logo_original.png" />\n\n    <form (submit)="doLogin()">\n\n      <strong>Login:</strong>\n\n      <ion-item>\n\n        <ion-input type="email" placeholder="Email"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-input type="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n      <button ion-button margin color="danger" (click)="navappointmentpage()">LOGIN</button>\n\n      <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>\n\n    </form>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic-doctor-app\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\pages\home\home.html"*/'<ion-header no-border>\n\n  <ion-navbar transparent>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n  <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">\n\n    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{\'background-image\': \'url(\' + background +\')\'}">\n\n    </ion-slide>\n\n  </ion-slides>\n\n  <div class="login-container">\n\n    <img class="logo" src="assets/imgs/logo/logo_original.png" />\n\n    <form (submit)="doLogin()">\n\n      <strong>Login:</strong>\n\n      <ion-item>\n\n        <ion-input type="email" placeholder="Email"></ion-input>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-input type="password" placeholder="Password"></ion-input>\n\n      </ion-item>\n\n      <button ion-button margin color="danger" (click)="navappointmentpage()">LOGIN</button>\n\n      <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>\n\n    </form>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]])
     ], HomePage);
@@ -608,13 +706,13 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 349:
+/***/ 351:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(356);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -622,26 +720,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 354:
+/***/ 356:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(678);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_appointment_appointment__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_patientdetails_patientdetails__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_personal_personal__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_lifestyle_lifestyle__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_appointment_appointment__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_patientdetails_patientdetails__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_personal_personal__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_lifestyle_lifestyle__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_medical_medical__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Providers_providerservice_providerservice__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_upcomingbookings_upcomingbookings__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_pastbookings_pastbookings__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Providers_providerservice_providerservice__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -667,6 +767,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -680,16 +782,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_personal_personal__["a" /* PersonalPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_lifestyle_lifestyle__["a" /* LifestylePage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_medical_medical__["a" /* MedicalPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_upcomingbookings_upcomingbookings__["a" /* UpcomingbookingsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_pastbookings_pastbookings__["a" /* PastbookingsPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/lifestyle/lifestyle.module#LifestylePageModule', name: 'LifestylePage', segment: 'lifestyle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/appointment/appointment.module#AppointmentPageModule', name: 'AppointmentPage', segment: 'appointment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/lifestyle/lifestyle.module#LifestylePageModule', name: 'LifestylePage', segment: 'lifestyle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/medical/medical.module#MedicalPageModule', name: 'MedicalPage', segment: 'medical', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/pastbookings/pastbookings.module#PastbookingsPageModule', name: 'PastbookingsPage', segment: 'pastbookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/patientdetails/patientdetails.module#PatientdetailsPageModule', name: 'PatientdetailsPage', segment: 'patientdetails', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/personal/personal.module#PersonalPageModule', name: 'PersonalPage', segment: 'personal', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/personal/personal.module#PersonalPageModule', name: 'PersonalPage', segment: 'personal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/upcomingbookings/upcomingbookings.module#UpcomingbookingsPageModule', name: 'UpcomingbookingsPage', segment: 'upcomingbookings', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 // HttpClient,
@@ -704,13 +810,15 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_patientdetails_patientdetails__["a" /* PatientdetailsPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_personal_personal__["a" /* PersonalPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_lifestyle_lifestyle__["a" /* LifestylePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_medical_medical__["a" /* MedicalPage */]
+                __WEBPACK_IMPORTED_MODULE_13__pages_medical_medical__["a" /* MedicalPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_upcomingbookings_upcomingbookings__["a" /* UpcomingbookingsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_pastbookings_pastbookings__["a" /* PastbookingsPage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_3__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_14__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */]
+                __WEBPACK_IMPORTED_MODULE_16__Providers_providerservice_providerservice__["a" /* ProviderserviceProvider */]
             ]
         })
     ], AppModule);
@@ -721,16 +829,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(350);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -756,16 +864,17 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\ionic-doctor-app\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\ionic-doctor-app\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Ionic\ionic-doctor-app\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"E:\Ionic\ionic-doctor-app\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
 
-},[349]);
+},[351]);
 //# sourceMappingURL=main.js.map

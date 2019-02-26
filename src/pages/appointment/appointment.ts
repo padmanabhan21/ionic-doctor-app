@@ -3,13 +3,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PatientdetailsPage } from '../patientdetails/patientdetails';
 import { AlertController } from 'ionic-angular';
 import {ProviderserviceProvider} from '../../Providers/providerservice/providerservice';
-
-/**
- * Generated class for the AppointmentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Observable } from '../../../node_modules/rxjs';
+import {UpcomingbookingsPage}from '../upcomingbookings/upcomingbookings';
+import {PastbookingsPage} from '../pastbookings/pastbookings';
 
 @IonicPage()
 @Component({
@@ -22,34 +18,49 @@ export class AppointmentPage {
   public patientdetails;
   public upcomingbooking=[];
   public pastbooking=[];
+  public subscription;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public alertCtrl: AlertController,
     public api:ProviderserviceProvider) {
   }
 
+  tab1root=UpcomingbookingsPage;
+  tab2root=PastbookingsPage;
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad AppointmentPage');
+    this.todaysappointment();
+    // this.subscription = Observable.interval(5000).subscribe(x => {
+    //   this.todaysappointment();
+    // });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+
+  todaysappointment(){
     this.api.patientdetails()
     .subscribe((resp:any) => {
       if(resp.Message_Code == "ASS"){
           this.appointmentdetails =resp.output;
+          this.upcomingbooking.length = 0;
+          this.pastbooking.length = 0;
           for(var i=0;i<this.appointmentdetails.length;i++){
             if(this.appointmentdetails[i].token_status == "Booked"){
-              this.upcomingbooking = this.appointmentdetails[i];
+              this.upcomingbooking.push(this.appointmentdetails[i]);
             }
             else{
-              this.pastbooking = this.appointmentdetails[i];
+               this.pastbooking.push(this.appointmentdetails[i]);
             }
           }
-          console.log("booked tokensssss",JSON.stringify(this.upcomingbooking));
-          console.log("consulted tokensssss",JSON.stringify(this.pastbooking));
+          console.log("booked tokensssss",this.upcomingbooking);
+          console.log("consulted tokensssss",this.pastbooking);
           console.log("patient detailsss",this.appointmentdetails);  
        }
-       
     });
-    // console.log("appointmentdetails", this.patientdetails);
   }
-
 
 
   navpatiententdetails(param) {

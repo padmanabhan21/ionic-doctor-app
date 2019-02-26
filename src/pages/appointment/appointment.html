@@ -1,15 +1,3 @@
-<!--
-  Generated template for the AppointmentPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<!-- <ion-header>
-  <ion-navbar>
-    <ion-title>appointment</ion-title>
-  </ion-navbar>
-</ion-header> -->
-
 <ion-content  class="background-color">
     <ion-card *ngFor="let appointment of appointmentdetails" class="border-redius-15" (click)="navpatiententdetails(appointment)">
         <!-- <img src="assets/imgs/logo/venkat.jpeg"/> -->
@@ -33,4 +21,9 @@
           </ion-row>
         </ion-card-content>
       </ion-card>
+
+      <ion-tabs class="relative" color="primary" tabsPlacement="top">
+        <ion-tab tabTitle="Upcoming Bookings" [root]="tab1root" [rootParams]="upcomingbooking" ></ion-tab>
+        <ion-tab tabTitle="Past Bookings" [root]="tab2root" [rootParams]="pastbooking" ></ion-tab>
+      </ion-tabs>
 </ion-content>

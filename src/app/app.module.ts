@@ -18,7 +18,9 @@ import {PatientdetailsPage} from '../pages/patientdetails/patientdetails';
 import {PersonalPage} from '../pages/personal/personal';
 import{LifestylePage} from '../pages/lifestyle/lifestyle';
 import{MedicalPage} from '../pages/medical/medical';
-import { ProviderserviceProvider } from '../Providers/providerservice/providerservice';
+import {UpcomingbookingsPage} from '../pages/upcomingbookings/upcomingbookings';
+import {PastbookingsPage} from '../pages/pastbookings/pastbookings';
+import {ProviderserviceProvider} from '../Providers/providerservice/providerservice';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { ProviderserviceProvider } from '../Providers/providerservice/providerse
     PersonalPage,
     LifestylePage,
     MedicalPage,
+    UpcomingbookingsPage,
+    PastbookingsPage,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,9 @@ import { ProviderserviceProvider } from '../Providers/providerservice/providerse
     PatientdetailsPage,
     PersonalPage,
     LifestylePage,
-    MedicalPage
+    MedicalPage,
+    UpcomingbookingsPage,
+    PastbookingsPage,
   ],
   providers: [
     StatusBar,

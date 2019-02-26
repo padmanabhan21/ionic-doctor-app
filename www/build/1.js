@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 682:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PatientdetailsPageModule", function() { return PatientdetailsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonalPageModule", function() { return PersonalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patientdetails__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal__ = __webpack_require__(152);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PatientdetailsPageModule = /** @class */ (function () {
-    function PatientdetailsPageModule() {
+var PersonalPageModule = /** @class */ (function () {
+    function PersonalPageModule() {
     }
-    PatientdetailsPageModule = __decorate([
+    PersonalPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__patientdetails__["a" /* PatientdetailsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__personal__["a" /* PersonalPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__patientdetails__["a" /* PatientdetailsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__personal__["a" /* PersonalPage */]),
             ],
         })
-    ], PatientdetailsPageModule);
-    return PatientdetailsPageModule;
+    ], PersonalPageModule);
+    return PersonalPageModule;
 }());
 
-//# sourceMappingURL=patientdetails.module.js.map
+//# sourceMappingURL=personal.module.js.map
 
 /***/ })
 

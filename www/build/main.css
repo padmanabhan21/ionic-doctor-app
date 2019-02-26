@@ -25708,6 +25708,11 @@ page-appointment .back-ground-color {
   background-color: steelblue !important;
 }
 
+page-appointment .relative {
+  position: relative;
+  top: auto;
+}
+
 page-home .scroll-content {
   margin-top: 0 !important;
 }
