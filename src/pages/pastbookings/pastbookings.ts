@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ModalController } from 'ionic-angular';
+import { PatientdetailsPage } from '../patientdetails/patientdetails';
 
 /**
  * Generated class for the PastbookingsPage page.
@@ -16,14 +17,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class PastbookingsPage {
 
   public pastbooking=[];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl:ModalController) {
     this.navParams = navParams;
     this.pastbooking = this.navParams.data;
     console.log("DATA SUCCESS",this.pastbooking);
   }
 
   ionViewDidLoad() {
+
     console.log('ionViewDidLoad PastbookingsPage');
+  }
+
+  navpatiententdetails(param) {
+   let pastbooking = this.modalCtrl.create(PatientdetailsPage ,{"patientdetails":param});
+   pastbooking.present();
+    console.log("parammmmm",param)
   }
 
 }

@@ -1,7 +1,3 @@
-<ion-header no-border>
-  <ion-navbar transparent>
-  </ion-navbar>
-</ion-header>
 <ion-content>
   <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
     <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
@@ -9,16 +5,15 @@
   </ion-slides>
   <div class="login-container">
     <img class="logo" src="assets/imgs/logo/logo_original.png" />
-    <form (submit)="doLogin()">
-      <strong>Login:</strong>
+    <ion-list inset>
+      <p>Login:</p>
       <ion-item>
-        <ion-input type="email" placeholder="Email"></ion-input>
+        <ion-input type="number" placeholder="Business Id" [(ngModel)]="business_id"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input type="password" placeholder="Password"></ion-input>
+        <ion-input type="text" placeholder="Doctor Id" [(ngModel)]="doctor_id"></ion-input>
       </ion-item>
-      <button ion-button margin color="danger" (click)="navappointmentpage()">LOGIN</button>
-      <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>
-    </form>
+      <button ion-button margin color="danger" (click)="navappointmentpage(business_id,doctor_id)">LOGIN</button>
+    </ion-list>
   </div>
 </ion-content>

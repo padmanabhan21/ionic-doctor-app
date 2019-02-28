@@ -36,6 +36,9 @@ export class PatientdetailsPage {
      this.patientdetailsarr = this.navParams.data.patientdetails;
   }
 
+  closeModal(){
+    this.navCtrl.pop();
+  }
   tab1root=PersonalPage;
   tab2root=MedicalPage;
   tab3root=LifestylePage;

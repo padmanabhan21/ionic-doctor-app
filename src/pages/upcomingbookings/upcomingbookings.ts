@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PatientdetailsPage } from '../patientdetails/patientdetails';
 import { AlertController } from 'ionic-angular';
-
+import { ProviderserviceProvider } from '../../Providers/providerservice/providerservice';
 /**
  * Generated class for the UpcomingbookingsPage page.
  *
@@ -18,13 +18,17 @@ import { AlertController } from 'ionic-angular';
 export class UpcomingbookingsPage {
 
   public upcomingbooking=[];
+  public records:boolean= true;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public alertCtrl: AlertController) {
+    public alertCtrl: AlertController,private api:ProviderserviceProvider) {
     this.navParams = navParams;
     this.upcomingbooking = this.navParams.data;
   }
 
   ionViewDidLoad() {
+    if(this.upcomingbooking.length == 0){
+      this.records = false;
+    }
     console.log('ionViewDidLoad UpcomingbookingsPage');
   }
 
@@ -73,6 +77,12 @@ export class UpcomingbookingsPage {
       handler: data => {
         console.log("apppointment Cancelled", data);
         appointment.flag = true;
+        this.api.updateappoinment('Cancel',appointment.app_id)
+        .subscribe((resp:any) =>{
+          if(resp.Message_Code == "RUS"){
+            console.log("Patient Cancelled Successfully");
+          }
+        });
       }
     });
     alert.addButton({
@@ -80,6 +90,12 @@ export class UpcomingbookingsPage {
       handler: data => {
         console.log("Appointment checkedout", data);
         appointment.flag = true;
+        this.api.updateappoinment('Checkout',appointment.app_id)
+        .subscribe((resp:any) =>{
+          if(resp.Message_Code == "RUS"){
+            console.log("Patient Checkout Successfully");
+          }
+        })
       }
     });
     alert.present();

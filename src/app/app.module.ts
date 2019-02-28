@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 // import { Http, Response, RequestOptions, Headers } from '@angular/http';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Ng2Webstorage } from "ngx-webstorage";
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -36,7 +38,10 @@ import {ProviderserviceProvider} from '../Providers/providerservice/providerserv
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    Ng2Webstorage,
+    IonicModule.forRoot(MyApp,{
+      scrollPadding:false,
+    }),
     // HttpClient,
     HttpClientModule,
     HttpModule

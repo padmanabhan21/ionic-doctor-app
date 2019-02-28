@@ -2,18 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-// import { SessionStorageService} from 'ngx-webstorage';
+import { SessionStorageService} from 'ngx-webstorage';
+import * as moment from 'moment';
 
-/*
-  Generated class for the ProviderserviceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class ProviderserviceProvider {
 
-  constructor(public http: Http) {
+  constructor(public http: Http,public session: SessionStorageService) {
     console.log('Hello ProviderserviceProvider Provider');
   }
   // Get Template
@@ -23,9 +18,22 @@ export class ProviderserviceProvider {
       .catch(this.handleError);
   }
 
+login(param,param1):Observable<object[]>{
+  const headers = new Headers();
+  headers.append('Content-Type', 'application/json');
+  const options = new RequestOptions({ headers: headers });
 
+  let body = 
+  {
+    "doctor_id":param1,
+    "business_id":param,
+    "login_status":"login"
+  }
 
-
+  return this.http.post('https://doctorappnew.herokuapp.com/insert_doctor_login',body,options)
+  .map(this.extractData)
+  .catch(this.handleError);
+}
 
   patientdetails(): Observable<object[]> {
     const headers = new Headers();
@@ -34,11 +42,26 @@ export class ProviderserviceProvider {
 
     let body =
     {
-      "business_id": 102,
-    "doctor_id": "vani116",
-    "business_date":"2019-02-18"
- }
+      "business_id": this.session.retrieve('business_id'),
+      "doctor_id": this.session.retrieve('doctor_id'),
+      "business_date": moment().format("YYYY-MM-DD")
+    }
     return this.http.post('https://doctorappnew.herokuapp.com/SelectAppoinment', body, options)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  updateappoinment(param,param1): Observable<object[]> {
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    const options = new RequestOptions({ headers: headers });
+
+    let body =
+    {
+      "token_status":param,
+      "appointment_id": param1
+    }
+    return this.http.post('https://doctorappnew.herokuapp.com/UpdateAppoinment', body, options)
       .map(this.extractData)
       .catch(this.handleError);
   }
@@ -48,8 +71,6 @@ export class ProviderserviceProvider {
     console.log(JSON.stringify(body));
     return body;
   }
-
-
 
   private handleError(error: Response | any) {
     let errMsg: string;

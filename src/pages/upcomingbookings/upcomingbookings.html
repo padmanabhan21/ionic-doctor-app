@@ -1,5 +1,6 @@
 <ion-content>
-    <ion-card *ngFor="let appointment of upcomingdetail" class="border-redius-15" (click)="navpatiententdetails(appointment)">
+    <h4 *ngIf="!records" style="text-align: center;height: 100%;margin-top: 70%;">No Records Found</h4>
+    <ion-card *ngFor="let appointment of upcomingbooking" class="border-redius-15" (click)="navpatiententdetails(appointment)">
         <ion-card-content>
           <ion-row>
             <ion-col col-3>

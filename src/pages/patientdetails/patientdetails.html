@@ -1,12 +1,19 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>Patient Details</ion-title>
+    <ion-row>
+        <ion-col col-11>
+            <ion-title>Patient Details</ion-title>
+        </ion-col>
+        <ion-col col-1>
+            <ion-icon name="close" style="color:white" (click)="closeModal()"></ion-icon>
+        </ion-col>
+    </ion-row>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
   <ion-card>
-    <img src="../../assets/imgs/background/background-4.jpg"/>
+    <img src="../../assets/imgs/background/background-4.jpg" />
     <div class="card-title">
       {{patientdetailsarr.user_name}}
     </div>
@@ -14,9 +21,9 @@
       {{patientdetailsarr.mobile}}
     </div>
   </ion-card>
-    <ion-tabs class="relative" color="primary" tabsPlacement="top">
-      <ion-tab tabTitle="Personal" [root]="tab1root" [rootParams]="patientdetailss" ></ion-tab>
-      <ion-tab tabTitle="Medical" [root]="tab2root" [rootParams]="patientdetailss"></ion-tab>
-      <ion-tab tabTitle="Lifestyle" [root]="tab3root" [rootParams]="patientdetailss"></ion-tab>
-    </ion-tabs>
+  <ion-tabs class="relative" color="primary" tabsPlacement="top">
+    <ion-tab tabTitle="Personal" [root]="tab1root" [rootParams]="patientdetailss"></ion-tab>
+    <ion-tab tabTitle="Medical" [root]="tab2root" [rootParams]="patientdetailss"></ion-tab>
+    <ion-tab tabTitle="Lifestyle" [root]="tab3root" [rootParams]="patientdetailss"></ion-tab>
+  </ion-tabs>
 </ion-content>
